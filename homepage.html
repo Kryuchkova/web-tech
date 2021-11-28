@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Список статей</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="blockHeader">
+            <header>Список статей</header>
+        </div>
+        <div id="blockArticles">
+            <ul class="articles-list"></ul>
+            <div id="blockFooter" class="footer">
+                <span>Количество статей: <span class="pendingArticles"></span></span>
+                <button class="active">Добавить</button>
+            </div>
+        </div>
+        <div id="blockAddForm" class="add-form">
+            <label class="labels" for="inputTitle">Заголовок</label>
+            <input id="inputTitle" type="text" class="inputs inputField">
+            <label class="labels" for="inputPicLink">Ссылка на картинку</label>
+            <input id="inputPicLink" type="text" class="inputs inputField">
+            <label class="labels" for="inputText">Текст</label>
+            <textarea id="inputText" class="inputs text"></textarea>
+            <button class="input-form active">Добавить</button>
+        </div>
+        <div id="blockInfoBanner">
+            <div class="info">
+                <img id="info-img" class="right-img" align="right" />
+                <p id="info"></p>
+            </div>
+            <button class="info-form active" onclick="deleteArticle()">Удалить</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
